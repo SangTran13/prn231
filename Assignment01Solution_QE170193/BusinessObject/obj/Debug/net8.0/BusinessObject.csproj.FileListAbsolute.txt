@@ -1,0 +1,15 @@
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\bin\Debug\net8.0\appsettings.json
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\bin\Debug\net8.0\BusinessObject.deps.json
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\bin\Debug\net8.0\BusinessObject.runtimeconfig.json
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\bin\Debug\net8.0\BusinessObject.dll
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\bin\Debug\net8.0\BusinessObject.pdb
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\BusinessObject.csproj.AssemblyReference.cache
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\BusinessObject.AssemblyInfoInputs.cache
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\BusinessObject.AssemblyInfo.cs
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\BusinessObject.dll
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\refint\BusinessObject.dll
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\BusinessObject.pdb
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\BusinessObject.genruntimeconfig.cache
+D:\Ky8\PRN231\Assignment01Solution_QE170193\BusinessObject\obj\Debug\net8.0\ref\BusinessObject.dll

@@ -1,0 +1,61 @@
+﻿@model BusinessObject.Product
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-danger fw-bold mb-4">Delete Product</h2>
+            <p class="text-muted text-center mb-4">Are you sure you want to delete this product?</p>
+
+            <dl class="row">
+                <dt class="col-4 fw-bold">
+                    Name
+                </dt>
+                <dd class="col-8">
+                    @Html.DisplayFor(model => model.ProductName)
+                </dd>
+                <dt class="col-4 fw-bold">
+                    Description
+                </dt>
+                <dd class="col-8">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+                <dt class="col-4 fw-bold">
+                    Unit price
+                </dt>
+                <dd class="col-8">
+                    @Html.DisplayFor(model => model.UnitPrice)
+                </dd>
+                <dt class="col-4 fw-bold">
+                    Units in stock
+                </dt>
+                <dd class="col-8">
+                    @Html.DisplayFor(model => model.UnitsInStock)
+                </dd>
+                <dt class="col-4 fw-bold">
+                    Status
+                </dt>
+                <dd class="col-8">
+                    <span class="badge bg-success">Active</span>
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="ProductId" />
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </form>
+            <hr />
+            <div class="text-center">
+                <small class="text-muted">
+                    <a asp-action="Index">Back to List</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+

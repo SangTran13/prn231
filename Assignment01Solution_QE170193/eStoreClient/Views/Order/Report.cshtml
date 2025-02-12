@@ -1,0 +1,103 @@
+﻿@{
+    string startDate = ViewData["StartDate"] != null ? DateTime.Parse(ViewData["StartDate"].ToString()).ToString("dddd, dd MMMM yyyy HH:mm:ss") : "Past";
+    string endDate = ViewData["EndDate"] != null ? DateTime.Parse(ViewData["EndDate"].ToString()).ToString("dddd, dd MMMM yyyy HH:mm:ss") : "Now";
+    List<BusinessObject.Order> orders = ViewData["Orders"] != null ? (List<BusinessObject.Order>)ViewData["Orders"] : new List<BusinessObject.Order>();
+}
+
+<h1 class="mb-2">Report orders</h1>
+
+<div class="my-3">
+    <span><strong>From:</strong> @startDate</span>
+    <br />
+    <span><strong>To:</strong> @endDate</span>
+</div>
+
+@if (orders.Count == 0)
+{
+    <p>No orders found</p>
+}
+else
+{
+    decimal total = 0;
+    int stt = 1;
+
+    <table class="table">
+        <thead>
+            <tr class="bg-dark text-white">
+                <th>#</th>
+                <th>
+                    OrderId
+                </th>
+                <th>
+                    Ordered Date
+                </th>
+                <th>
+                    Shipped Date
+                </th>
+                <th>
+                    Total
+                </th>
+                <th>
+                    Status
+                </th>
+                <th>
+                    Freight
+                </th>
+                <th>
+                    Member
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in orders)
+            {
+                total += item.Total;
+
+                <tr>
+                    <td>@(stt++)</td>
+                    <td>
+                        @item.OrderId
+                    </td>
+                    <td>
+                        @item.OrderDate
+                    </td>
+                    <td>
+                        @item.ShippedDate
+                    </td>
+                    <td>
+                        @item.Total.ToString("n0")
+                    </td>
+                    <td>
+                        @if (item.OrderStatus == 0)
+                        {
+                            <span class="text-warning">Pending</span>
+                        }
+                        else if (item.OrderStatus == 1)
+                        {
+                            <span class="text-success">Shipped</span>
+                        }
+                        else if (item.OrderStatus == 2)
+                        {
+                            <span class="text-danger">Cancelled</span>
+                        }
+                    </td>
+                    <td>
+                        @item.Freight
+                    </td>
+                    <td>
+                        @item.Member.MemberName
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td colspan="4" class="text-right"><strong>Total</strong></td>
+                <td>@(total.ToString("n0"))</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+<a asp-action="Index">Back to list</a>

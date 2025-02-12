@@ -1,0 +1,11 @@
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\bin\Debug\net8.0\Shared.deps.json
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\bin\Debug\net8.0\Shared.dll
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\bin\Debug\net8.0\Shared.pdb
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\obj\Debug\net8.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\obj\Debug\net8.0\Shared.AssemblyInfoInputs.cache
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\obj\Debug\net8.0\Shared.AssemblyInfo.cs
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\obj\Debug\net8.0\Shared.csproj.CoreCompileInputs.cache
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\obj\Debug\net8.0\Shared.dll
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\obj\Debug\net8.0\refint\Shared.dll
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\obj\Debug\net8.0\Shared.pdb
+D:\Ky8\PRN231\Assignment01Solution_QE170193\Shared\obj\Debug\net8.0\ref\Shared.dll

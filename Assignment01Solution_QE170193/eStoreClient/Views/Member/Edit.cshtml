@@ -1,0 +1,78 @@
+﻿@model BusinessObject.Member
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Member</h2>
+            <p class="text-muted text-center mb-4">Update your account to get started</p>
+
+            <!-- Error Message -->
+            @if (ViewData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @ViewData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <!-- Success Message -->
+            @if (ViewData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    @ViewData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            <hr />
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="MemberId" />
+                <div class="mb-3">
+                    <label asp-for="MemberName" class="form-label fw-bold">Name</label>
+                    <input asp-for="MemberName" class="form-control" />
+                    <span asp-validation-for="MemberName" class="text-danger d-block small mt-1"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label fw-bold"></label>
+                    <input asp-for="Email" class="form-control" readonly />
+                    <span asp-validation-for="Email" class="text-danger d-block small mt-1"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="City" class="form-label fw-bold"></label>
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger d-block small mt-1"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Country" class="form-label fw-bold"></label>
+                    <input asp-for="Country" class="form-control" />
+                    <span asp-validation-for="Country" class="text-danger d-block small mt-1"></span>
+                </div>
+                <input type="hidden" asp-for="Password" />
+                <div class="mb-3">
+                    <label asp-for="DateOfBirth" class="form-label fw-bold">Date of birth</label>
+                    <input asp-for="DateOfBirth" class="form-control" />
+                    <span asp-validation-for="DateOfBirth" class="text-danger d-block small mt-1"></span>
+                </div>
+                <div class="d-grid mb-3">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+            <div class="text-center">
+                <small class="text-muted">
+                    <a asp-action="Index">Back to List</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

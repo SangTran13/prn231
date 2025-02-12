@@ -1,0 +1,94 @@
+﻿@model BusinessObject.Product;
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Product</h2>
+            <p class="text-muted text-center mb-4">Update your product to get started</p>
+
+            <!-- Error Message -->
+            @if (ViewData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @ViewData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <!-- Success Message -->
+            @if (ViewData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    @ViewData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            <hr />
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="ProductId" />
+                <div class="mb-3">
+                    <label asp-for="ProductName" class="form-label fw-bold">Name</label>
+                    <input asp-for="ProductName" class="form-control" />
+                    <span asp-validation-for="ProductName" class="text-danger d-block small mt-1"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label fw-bold"></label>
+                    <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Description" class="text-danger d-block small mt-1"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="UnitPrice" class="form-label fw-bold">Unit price</label>
+                    <input asp-for="UnitPrice" class="form-control" />
+                    <span asp-validation-for="UnitPrice" class="text-danger d-block small mt-1"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="UnitsInStock" class="form-label fw-bold">Unit in stock</label>
+                    <input asp-for="UnitsInStock" class="form-control" />
+                    <span asp-validation-for="UnitsInStock" class="text-danger d-block small mt-1"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="CategoryId" class="form-label fw-bold">Category</label>
+                    <select asp-for="CategoryId" class="form-control">
+                        @foreach (var std in (List<BusinessObject.Category>)ViewData["Categories"])
+                        {
+                            <option value="@std.CategoryId">@std.CategoryName</option>
+                        }
+                    </select>
+                </div>
+
+                <input type="hidden" asp-for="ProductStatus" />
+
+                <div class="mb-3">
+                    <label asp-for="SupplierId" class="form-label fw-bold">Supplier</label>
+                    <select asp-for="SupplierId" class="form-control">
+                        @foreach (var std in (List<BusinessObject.Supplier>)ViewData["Suppliers"])
+                        {
+                            <option value="@std.SupplierId">@std.SupplierName</option>
+                        }
+                    </select>
+                </div>
+                <div class="d-grid mb-3">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+            <div class="text-center">
+                <small class="text-muted">
+                    <a asp-action="Index">Back to List</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObject", "BusinessObject\BusinessObject.csproj", "{55FE61AA-AD51-4F90-BB93-AF2D55AD935C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{CBE517A3-C1FE-410E-A78E-B5AD296B2593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eStoreAPI", "eStoreAPI\eStoreAPI.csproj", "{56CCBD26-6B6C-46AE-B074-4AF1D5089AA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{64ACBEC9-250C-4962-8A55-F07C151EAAF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{D7B77821-2D7F-4FAB-A6CD-513BD0C9261B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransfer", "DataTransfer\DataTransfer.csproj", "{20675CD4-3789-41D2-9DB4-090CBD229F49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eStoreClient", "eStoreClient\eStoreClient.csproj", "{293EDE76-36F8-4D9B-9FFD-BDA0631A5700}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55FE61AA-AD51-4F90-BB93-AF2D55AD935C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FE61AA-AD51-4F90-BB93-AF2D55AD935C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FE61AA-AD51-4F90-BB93-AF2D55AD935C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FE61AA-AD51-4F90-BB93-AF2D55AD935C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE517A3-C1FE-410E-A78E-B5AD296B2593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE517A3-C1FE-410E-A78E-B5AD296B2593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE517A3-C1FE-410E-A78E-B5AD296B2593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE517A3-C1FE-410E-A78E-B5AD296B2593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CCBD26-6B6C-46AE-B074-4AF1D5089AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CCBD26-6B6C-46AE-B074-4AF1D5089AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CCBD26-6B6C-46AE-B074-4AF1D5089AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CCBD26-6B6C-46AE-B074-4AF1D5089AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64ACBEC9-250C-4962-8A55-F07C151EAAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64ACBEC9-250C-4962-8A55-F07C151EAAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64ACBEC9-250C-4962-8A55-F07C151EAAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64ACBEC9-250C-4962-8A55-F07C151EAAF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B77821-2D7F-4FAB-A6CD-513BD0C9261B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B77821-2D7F-4FAB-A6CD-513BD0C9261B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B77821-2D7F-4FAB-A6CD-513BD0C9261B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B77821-2D7F-4FAB-A6CD-513BD0C9261B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20675CD4-3789-41D2-9DB4-090CBD229F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20675CD4-3789-41D2-9DB4-090CBD229F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20675CD4-3789-41D2-9DB4-090CBD229F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20675CD4-3789-41D2-9DB4-090CBD229F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293EDE76-36F8-4D9B-9FFD-BDA0631A5700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293EDE76-36F8-4D9B-9FFD-BDA0631A5700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293EDE76-36F8-4D9B-9FFD-BDA0631A5700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293EDE76-36F8-4D9B-9FFD-BDA0631A5700}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

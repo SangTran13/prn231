@@ -1,0 +1,96 @@
+﻿@model IEnumerable<BusinessObject.Product>
+
+@{
+    ViewData["Title"] = "Product Management";
+    string keyword = ViewData["keyword"] as string ?? "";
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1>Manage Products</h1>
+        <a asp-action="Create" class="btn btn-primary">Add New Product</a>
+    </div>
+
+    @if (ViewData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger" role="alert">@ViewData["ErrorMessage"]</div>
+    }
+    @if (ViewData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">@ViewData["SuccessMessage"]</div>
+    }
+
+    <form asp-action="Search" method="get" class="mb-4">
+        <div class="row g-2">
+            <div class="col-md-8">
+                <input type="text" name="keyword" value="@keyword" placeholder="Search products..." class="form-control" />
+            </div>
+            <div class="col-md-4 d-flex">
+                <button type="submit" class="btn btn-primary w-50 me-2">Search</button>
+                <a asp-action="Index" class="btn btn-secondary w-50">Clear</a>
+            </div>
+        </div>
+    </form>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No products found.</div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>@Html.DisplayNameFor(model => model.Description)</th>
+                    <th>Unit Price</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>@Html.DisplayNameFor(model => model.Category)</th>
+                    <th>@Html.DisplayNameFor(model => model.Supplier)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    var product = Model.ElementAt(i);
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>@Html.DisplayFor(m => product.ProductName)</td>
+                        <td>@Html.DisplayFor(m => product.Description)</td>
+                        <td>@product.UnitPrice.ToString("C")</td>
+                        <td>@product.UnitsInStock</td>
+                        <td>
+                            @if (product.ProductStatus == 1)
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Inactive</span>
+                            }
+                        </td>
+                        <td>@Html.DisplayFor(m => product.Category.CategoryName)</td>
+                        <td>@Html.DisplayFor(m => product.Supplier.SupplierName)</td>
+                        <td>
+                            @if (product.ProductStatus == 1)
+                            {
+                                <a asp-action="Edit" asp-route-id="@product.ProductId" class="btn btn-primary btn-sm">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@product.ProductId" class="btn btn-danger btn-sm">Delete</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

@@ -1,0 +1,170 @@
+﻿@model DataTransfer.OrderRequest
+
+@{
+    ViewData["Title"] = "Create";
+    List<DataTransfer.OrderItemRequest> OrderItems = (List<DataTransfer.OrderItemRequest>)ViewData["OrderItems"];
+    string Role = Context.Session.GetString("ROLE");
+}
+
+<div class="container py-4">
+    <h1 class="mb-4">Create an Order</h1>
+
+    @if (ViewData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger" role="alert">@ViewData["ErrorMessage"]</div>
+    }
+    @if (ViewData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">@ViewData["SuccessMessage"]</div>
+    }
+
+    <hr />
+    <div class="row">
+        <div class="col-md-8 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Add Product</h4>
+                    <form class="form-group" method="post" asp-action="AddOrderItem">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="ProductId" class="form-label">Product</label>
+                                <select asp-for="ProductId" id="ProductId" class="form-select">
+                                    @foreach (var std in (List<BusinessObject.Product>)ViewData["Products"])
+                                    {
+                                        if (std.ProductId == (int?)TempData["SelectedProductId"])
+                                        {
+                                            <option value="@std.ProductId" selected>@std.ProductName</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@std.ProductId">@std.ProductName</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label asp-for="Quantity" class="form-label">Quantity</label>
+                                <input asp-for="Quantity" value="1" min="1" type="number" class="form-control" />
+                            </div>
+                            <div class="col-md-2 d-flex align-items-end">
+                                <input type="submit" value="+" class="btn btn-warning w-100" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">List Items</h4>
+                    @if (OrderItems == null || OrderItems.Count == 0)
+                    {
+                        <p class="text-muted">No items added yet.</p>
+                    }
+                    else
+                    {
+                        decimal total = 0;
+                        int stt = 1;
+
+                        <table class="table table-striped">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th colspan="2">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var cartitem in OrderItems)
+                                {
+                                    var totalMoney = cartitem.Quantity * cartitem.Product.UnitPrice;
+                                    total += totalMoney;
+
+                                    <tr>
+                                        <td>@(stt++)</td>
+                                        <td>@cartitem.Product.ProductName</td>
+                                        <td>@(cartitem.Product.UnitPrice.ToString("n0"))</td>
+                                        <td>@cartitem.Quantity</td>
+                                        <td>@(totalMoney.ToString("n0"))</td>
+                                        <td>
+                                            <form asp-action="SubtractOrderItem" class="d-inline">
+                                                <input hidden asp-for="ProductId" value="@cartitem.Product.ProductId" />
+                                                <button type="submit" class="btn btn-secondary btn-sm">-</button>
+                                            </form>
+                                            <form asp-action="RemoveOrderItem" class="d-inline">
+                                                <input hidden asp-for="ProductId" value="@cartitem.Product.ProductId" />
+                                                <button type="submit" class="btn btn-danger btn-sm">x</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                                <tr class="fw-bold">
+                                    <td colspan="4" class="text-end">Total</td>
+                                    <td>@(total.ToString("n0"))</td>
+                                    <td colspan="2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Order Details</h4>
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group mb-3">
+                            <label asp-for="Freight" class="form-label">Freight</label>
+                            <input asp-for="Freight" class="form-control" />
+                            <span asp-validation-for="Freight" class="text-danger"></span>
+                        </div>
+                        @if (Role == "Admin")
+                        {
+                            <div class="form-group mb-3">
+                                <label asp-for="Discount" class="form-label">Discount (%)</label>
+                                <input type="number" asp-for="Discount" min="0" max="100" step="1" class="form-control" />
+                            </div>
+                        }
+                        @if (Role == "Admin")
+                        {
+                            <div class="form-group mb-3">
+                                <label asp-for="MemberId" class="form-label">Member</label>
+                                <select asp-for="MemberId" class="form-select">
+                                    @foreach (var std in (List<BusinessObject.Member>)ViewData["Members"])
+                                    {
+                                        <option value="@std.MemberId">@std.MemberName</option>
+                                    }
+                                </select>
+                            </div>
+                        }
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Create</button>
+                            @if (Role == "Admin")
+                            {
+                                <a class="btn btn-danger" asp-action="Index">Cancel</a>
+                            }
+                            else
+                            {
+                                <a class="btn btn-danger" asp-action="OrderHistory">Cancel</a>
+                            }
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

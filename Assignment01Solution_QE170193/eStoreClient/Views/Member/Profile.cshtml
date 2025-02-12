@@ -1,0 +1,49 @@
+﻿@model BusinessObject.Member
+
+@{
+    ViewData["Title"] = "Profile";
+    string Username = Context.Session.GetString("USERNAME");
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">My Profile</h2>
+            <p class="text-muted text-center mb-4">Welcome back, @Username!</p>
+
+            @if (ViewData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @ViewData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (ViewData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    @ViewData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <dl class="row">
+                <dt class="col-4 fw-bold">Name</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.MemberName)</dd>
+                <dt class="col-4 fw-bold">Email</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Email)</dd>
+                <dt class="col-4 fw-bold">City</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.City)</dd>
+                <dt class="col-4 fw-bold">Country</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Country)</dd>
+                <dt class="col-4 fw-bold">Date of Birth</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.DateOfBirth)</dd>
+            </dl>
+
+            <div class="d-grid">
+                <a asp-action="EditProfile" class="btn btn-primary">Edit Profile</a>
+            </div>
+        </div>
+    </div>
+</div>

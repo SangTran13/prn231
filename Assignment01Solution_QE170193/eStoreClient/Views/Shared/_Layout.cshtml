@@ -1,0 +1,93 @@
+﻿@{
+    String Role = Context.Session.GetString("ROLE");
+    String Username = Context.Session.GetString("USERNAME");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - eStoreClient</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container-fluid">
+                @if (Role != null && Role == "Admin")
+                {
+                    <a class="navbar-brand fw-bold text-primary" asp-area="" asp-controller="Member" asp-action="Index">eStoreClient</a>
+                }
+                else if (Role != null && Role == "Member")
+                {
+                    <a class="navbar-brand fw-bold text-primary" asp-area="" asp-controller="Member" asp-action="Profile">eStoreClient</a>
+                }
+                else
+                {
+                    <a class="navbar-brand fw-bold text-primary" asp-area="" asp-controller="Home" asp-action="Index">eStoreClient</a>
+                }
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        @if (Role == "Admin")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary fw-bold" asp-area="" asp-controller="Member" asp-action="Index">Manage Member</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary fw-bold" asp-area="" asp-controller="Order" asp-action="Index">Manage Order</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary fw-bold" asp-area="" asp-controller="Product" asp-action="Index">Manage Product</a>
+                            </li>
+                        }
+                        else if (Role == "Member")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary fw-bold" asp-area="" asp-controller="Member" asp-action="Profile">My Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary fw-bold" asp-area="" asp-controller="Order" asp-action="OrderHistory">Order History</a>
+                            </li>
+                        }
+                    </ul>
+                    @if (Username != null)
+                    {
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-primary fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Welcome, @Username
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Home" asp-action="Logout">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-4">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-light py-3">
+        <div class="container text-center">
+            &copy; 2025 - eStoreClient - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-decoration-none text-primary">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

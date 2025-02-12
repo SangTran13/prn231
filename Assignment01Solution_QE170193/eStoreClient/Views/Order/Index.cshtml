@@ -1,0 +1,111 @@
+﻿@model IEnumerable<BusinessObject.Order>
+
+@{
+    ViewData["Title"] = "Order Management";
+    string role = Context.Session.GetString("ROLE");
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Orders</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1>Manage Orders</h1>
+        <a asp-action="Create" class="btn btn-primary">Create New Order</a>
+    </div>
+
+    @if (ViewData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger" role="alert">@ViewData["ErrorMessage"]</div>
+    }
+    @if (ViewData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">@ViewData["SuccessMessage"]</div>
+    }
+
+    @if (role == "Admin")
+    {
+        <form class="my-4" asp-action="Report">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="startDate">Start Date</label>
+                    <input type="datetime-local" id="startDate" name="startDate" class="form-control" />
+                </div>
+                <div class="col-md-5">
+                    <label for="endDate">End Date</label>
+                    <input type="datetime-local" id="endDate" name="endDate" class="form-control" />
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">Generate Report</button>
+                </div>
+            </div>
+        </form>
+    }
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No orders found.</div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.OrderId)</th>
+                    <th>@Html.DisplayNameFor(model => model.OrderDate)</th>
+                    <th>@Html.DisplayNameFor(model => model.ShippedDate)</th>
+                    <th>@Html.DisplayNameFor(model => model.Total)</th>
+                    <th>@Html.DisplayNameFor(model => model.OrderStatus)</th>
+                    <th>@Html.DisplayNameFor(model => model.Freight)</th>
+                    @if (role == "Admin")
+                    {
+                        <th>@Html.DisplayNameFor(model => model.Member)</th>
+                    }
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(m => order.OrderId)</td>
+                        <td>@Html.DisplayFor(m => order.OrderDate)</td>
+                        <td>@(order.ShippedDate?.ToString("yyyy-MM-dd HH:mm") ?? "N/A")</td>
+                        <td>@order.Total.ToString("C")</td>
+                        <td>
+                            @if (order.OrderStatus == 0)
+                            {
+                                <span class="badge bg-warning">Pending</span>
+                            }
+                            else if (order.OrderStatus == 1)
+                            {
+                                <span class="badge bg-success">Shipped</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Cancelled</span>
+                            }
+                        </td>
+                        <td>@Html.DisplayFor(m => order.Freight)</td>
+                        @if (role == "Admin")
+                        {
+                            <td>@Html.DisplayFor(m => order.Member.MemberName)</td>
+                        }
+                        <td>
+                            <a asp-action="Details" asp-route-id="@order.OrderId" class="btn btn-primary btn-sm">Details</a>
+                            @if (role == "Admin" && order.OrderStatus == 0)
+                            {
+                                <a asp-action="Shipped" asp-route-id="@order.OrderId" class="btn btn-success btn-sm">Mark as Shipped</a>
+                                <a asp-action="Cancel" asp-route-id="@order.OrderId" class="btn btn-danger btn-sm">Cancel</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
