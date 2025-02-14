@@ -1,0 +1,75 @@
+﻿@model BusinessObject.Models.Author
+
+@{
+    ViewData["Title"] = "Create Author";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Create Author</h2>
+            <p class="text-muted text-center mb-4">Fill in the details to add a new author</p>
+            <hr />
+            <form asp-action="CreateAuthor">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="last_name" class="form-label fw-bold">Last Name</label>
+                    <input asp-for="last_name" class="form-control" />
+                    <span asp-validation-for="last_name" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="first_name" class="form-label fw-bold">First Name</label>
+                    <input asp-for="first_name" class="form-control" />
+                    <span asp-validation-for="first_name" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="phone" class="form-label fw-bold">Phone</label>
+                    <input asp-for="phone" class="form-control" />
+                    <span asp-validation-for="phone" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="address" class="form-label fw-bold">Address</label>
+                    <input asp-for="address" class="form-control" />
+                    <span asp-validation-for="address" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="city" class="form-label fw-bold">City</label>
+                    <input asp-for="city" class="form-control" />
+                    <span asp-validation-for="city" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="state" class="form-label fw-bold">State</label>
+                    <input asp-for="state" class="form-control" />
+                    <span asp-validation-for="state" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="zip" class="form-label fw-bold">Zip</label>
+                    <input asp-for="zip" class="form-control" />
+                    <span asp-validation-for="zip" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="email_address" class="form-label fw-bold">Email Address</label>
+                    <input asp-for="email_address" class="form-control" />
+                    <span asp-validation-for="email_address" class="text-danger small"></span>
+                </div>
+
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+                <div class="text-center">
+                    <small class="text-muted">
+                        <a asp-action="ViewAuthor">Back to List</a>
+                    </small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

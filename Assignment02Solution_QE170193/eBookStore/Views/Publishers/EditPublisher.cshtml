@@ -1,0 +1,57 @@
+﻿@model BusinessObject.Models.Publisher
+@{
+    ViewData["Title"] = "Edit Publisher";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 500px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Edit Publisher</h2>
+            <p class="text-muted text-center mb-4">Update publisher details below</p>
+
+            <form asp-action="EditPublisher">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="pub_id" />
+
+                <div class="mb-3">
+                    <label asp-for="publisher_name" class="form-label fw-bold">Publisher Name</label>
+                    <input asp-for="publisher_name" class="form-control" />
+                    <span asp-validation-for="publisher_name" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="city" class="form-label fw-bold">City</label>
+                    <input asp-for="city" class="form-control" />
+                    <span asp-validation-for="city" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="state" class="form-label fw-bold">State</label>
+                    <input asp-for="state" class="form-control" />
+                    <span asp-validation-for="state" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="country" class="form-label fw-bold">Country</label>
+                    <input asp-for="country" class="form-control" />
+                    <span asp-validation-for="country" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+            <div class="text-center">
+                <small class="text-muted">
+                    <a asp-action="ViewPublisher">Back to List</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

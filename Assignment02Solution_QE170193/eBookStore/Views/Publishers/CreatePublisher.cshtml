@@ -1,0 +1,51 @@
+﻿@model BusinessObject.Models.Publisher
+
+@{
+    ViewData["Title"] = "Create Publisher";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Create Publisher</h2>
+            <p class="text-muted text-center mb-4">Fill in the details to add a new publisher</p>
+            <hr />
+            <form asp-action="CreatePublisher">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="publisher_name" class="form-label fw-bold">Publisher Name</label>
+                    <input asp-for="publisher_name" class="form-control" />
+                    <span asp-validation-for="publisher_name" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="city" class="form-label fw-bold">City</label>
+                    <input asp-for="city" class="form-control" />
+                    <span asp-validation-for="city" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="state" class="form-label fw-bold">State</label>
+                    <input asp-for="state" class="form-control" />
+                    <span asp-validation-for="state" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="country" class="form-label fw-bold">Country</label>
+                    <input asp-for="country" class="form-control" />
+                    <span asp-validation-for="country" class="text-danger small"></span>
+                </div>
+
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+                <div class="text-center">
+                    <small class="text-muted">
+                        <a asp-action="ViewPublisher">Back to List</a>
+                    </small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿@model eBookStore.Models.BookDetailViewModel
+
+@{
+    ViewData["Title"] = "Book Details";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 600px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Book Details</h2>
+            <hr />
+            <dl class="row">
+                <dt class="col-4 fw-bold">Title:</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Book.title)</dd>
+
+                <dt class="col-4 fw-bold">Author(s):</dt>
+                <dd class="col-8">
+                    @if (Model.BookAuthors != null && Model.BookAuthors.Any())
+                    {
+                        foreach (var author in Model.BookAuthors)
+                        {
+                            <span>@author.Author.first_name @author.Author.last_name</span>
+                            <br />
+                        }
+                    }
+                    else
+                    {
+                        <span class="text-danger">No authors found</span>
+                    }
+                </dd>
+
+                <dt class="col-4 fw-bold">Type:</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Book.type)</dd>
+
+                <dt class="col-4 fw-bold">Publisher:</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Book.Publisher.publisher_name)</dd>
+
+                <dt class="col-4 fw-bold">Price:</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Book.price)</dd>
+
+                <dt class="col-4 fw-bold">Advance:</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Book.advance)</dd>
+
+                <dt class="col-4 fw-bold">Royalty:</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Book.royalty)</dd>
+
+                <dt class="col-4 fw-bold">YtdSales:</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Book.ytd_sales)</dd>
+
+                <dt class="col-4 fw-bold">Notes:</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.Book.notes)</dd>
+
+                <dt class="col-4 fw-bold">Published Date:</dt>
+                <dd class="col-8">@Model.Book.published_date.ToString("dd/MM/yyyy")</dd>
+            </dl>
+            <hr />
+            <div class="text-center">
+                <a asp-action="ViewBook" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>

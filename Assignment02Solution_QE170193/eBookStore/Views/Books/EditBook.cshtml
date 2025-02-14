@@ -1,0 +1,107 @@
+﻿@model BusinessObject.Models.Book
+@{
+    ViewData["Title"] = "Edit Book";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Edit Book</h2>
+            <p class="text-muted text-center mb-4">Update book details</p>
+
+            @if (ViewData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @ViewData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            @if (ViewData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    @ViewData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            <hr />
+
+            <form asp-action="EditBook">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="book_id" />
+
+                <div class="mb-3">
+                    <label asp-for="title" class="form-label fw-bold">Title</label>
+                    <input asp-for="title" class="form-control" />
+                    <span asp-validation-for="title" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="type" class="form-label fw-bold">Type</label>
+                    <input asp-for="type" class="form-control" />
+                    <span asp-validation-for="type" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="pub_id" class="form-label fw-bold">Publisher</label>
+                    <select asp-for="pub_id" class="form-control" asp-items="ViewBag.PublisherId"></select>
+                    <span asp-validation-for="pub_id" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="price" class="form-label fw-bold">Price</label>
+                    <input asp-for="price" class="form-control" />
+                    <span asp-validation-for="price" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="advance" class="form-label fw-bold">Advance</label>
+                    <input asp-for="advance" class="form-control" />
+                    <span asp-validation-for="advance" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="royalty" class="form-label fw-bold">Royalty</label>
+                    <input asp-for="royalty" class="form-control" />
+                    <span asp-validation-for="royalty" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ytd_sales" class="form-label fw-bold">Year-to-Date Sales</label>
+                    <input asp-for="ytd_sales" class="form-control" type="number" />
+                    <span asp-validation-for="ytd_sales" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="notes" class="form-label fw-bold">Notes</label>
+                    <textarea asp-for="notes" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="notes" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="published_date" class="form-label fw-bold">Published Date</label>
+                    <input asp-for="published_date" class="form-control" type="date" />
+                    <span asp-validation-for="published_date" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+
+            <div class="text-center">
+                <small class="text-muted">
+                    <a asp-action="ViewBook">Back to List</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

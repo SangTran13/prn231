@@ -1,0 +1,80 @@
+﻿@model eBookStore.Models.BookViewModel
+
+@{
+    ViewData["Title"] = "View Books";
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Books</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1>Manage Books</h1>
+        <a asp-action="CreateBook" class="btn btn-primary">Add New Book</a>
+    </div>
+
+    <div class="card p-3 mb-4 shadow-sm">
+        <form asp-action="ViewBook" method="get" class="row g-2">
+            <div class="col-md-6">
+                <input asp-for="SearchTitle" class="form-control" placeholder="Search by title..." />
+            </div>
+            <div class="col-md-4">
+                <input asp-for="SearchPrice" class="form-control" placeholder="Search by price..." type="number" step="0.01" />
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">Search</button>
+            </div>
+        </form>
+    </div>
+
+    @if (!Model.Books.Any())
+    {
+        <div class="alert alert-info">No books found.</div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Publisher ID</th>
+                    <th>Price</th>
+                    <th>Advance</th>
+                    <th>Royalty</th>
+                    <th>YTD Sales</th>
+                    <th>Notes</th>
+                    <th>Published Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Books)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.title)</td>
+                        <td>@Html.DisplayFor(modelItem => item.type)</td>
+                        <td>@Html.DisplayFor(modelItem => item.pub_id)</td>
+                        <td>@Html.DisplayFor(modelItem => item.price)</td>
+                        <td>@Html.DisplayFor(modelItem => item.advance)</td>
+                        <td>@Html.DisplayFor(modelItem => item.royalty)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ytd_sales)</td>
+                        <td>@Html.DisplayFor(modelItem => item.notes)</td>
+                        <td>@item.published_date.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a asp-action="EditBook" asp-route-id="@item.book_id" class="btn btn-sm btn-primary">Edit</a>
+                                <a asp-action="DeleteBook" asp-route-id="@item.book_id" class="btn btn-sm btn-danger">Delete</a>
+                                <a asp-action="DetailBook" asp-route-id="@item.book_id" class="btn btn-sm btn-info">Details</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

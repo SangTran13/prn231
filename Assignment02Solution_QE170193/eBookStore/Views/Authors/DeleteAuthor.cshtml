@@ -1,0 +1,45 @@
+﻿@model BusinessObject.Models.Author
+@{
+    ViewData["Title"] = "Delete Author";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-danger fw-bold mb-4">Delete Author</h2>
+            <p class="text-muted text-center mb-4">Are you sure you want to delete this author?</p>
+
+            <dl class="row">
+                <dt class="col-4 fw-bold">Last Name</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.last_name)</dd>
+                <dt class="col-4 fw-bold">First Name</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.first_name)</dd>
+                <dt class="col-4 fw-bold">Phone</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.phone)</dd>
+                <dt class="col-4 fw-bold">Address</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.address)</dd>
+                <dt class="col-4 fw-bold">City</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.city)</dd>
+                <dt class="col-4 fw-bold">State</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.state)</dd>
+                <dt class="col-4 fw-bold">Zip</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.zip)</dd>
+                <dt class="col-4 fw-bold">Email</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.email_address)</dd>
+            </dl>
+
+            <form asp-action="DeleteAuthor">
+                <input type="hidden" asp-for="author_id" />
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </form>
+            <hr />
+            <div class="text-center">
+                <small class="text-muted">
+                    <a asp-action="ViewAuthor">Back to List</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>

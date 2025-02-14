@@ -1,0 +1,47 @@
+﻿@model BusinessObject.Models.Book
+@{
+    ViewData["Title"] = "Delete Book";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-danger fw-bold mb-4">Delete Book</h2>
+            <p class="text-muted text-center mb-4">Are you sure you want to delete this book?</p>
+
+            <dl class="row">
+                <dt class="col-4 fw-bold">Title</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.title)</dd>
+                <dt class="col-4 fw-bold">Type</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.type)</dd>
+                <dt class="col-4 fw-bold">Publisher</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.pub_id)</dd>
+                <dt class="col-4 fw-bold">Price</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.price)</dd>
+                <dt class="col-4 fw-bold">Advance</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.advance)</dd>
+                <dt class="col-4 fw-bold">Royalty</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.royalty)</dd>
+                <dt class="col-4 fw-bold">Sales</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.ytd_sales)</dd>
+                <dt class="col-4 fw-bold">Notes</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.notes)</dd>
+                <dt class="col-4 fw-bold">Published Date</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.published_date)</dd>
+            </dl>
+
+            <form asp-action="DeleteBook">
+                <input type="hidden" asp-for="book_id" />
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </form>
+            <hr />
+            <div class="text-center">
+                <small class="text-muted">
+                    <a asp-action="ViewBook">Back to List</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>

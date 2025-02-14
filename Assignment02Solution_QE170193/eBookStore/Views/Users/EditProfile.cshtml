@@ -1,0 +1,73 @@
+﻿@model eBookStore.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Edit Profile</h2>
+            <p class="text-muted text-center mb-4">Update your account information</p>
+
+            @if (TempData["UpdateFail"] != null)
+            {
+                <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @TempData["UpdateFail"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            @if (TempData["UpdateSuccess"] != null)
+            {
+                <div class="alert alert-success d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    @TempData["UpdateSuccess"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            <hr />
+            <form asp-action="EditProfile" method="post">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Email</label>
+                    <input type="email" class="form-control" asp-for="Email" readonly />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">First Name</label>
+                    <input type="text" class="form-control" asp-for="FirstName" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Middle Name</label>
+                    <input type="text" class="form-control" asp-for="MiddleName" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Last Name</label>
+                    <input type="text" class="form-control" asp-for="LastName" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Password</label>
+                    <input type="password" class="form-control" asp-for="Password" value="@Model.Password" required />
+                </div>
+
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">Update Profile</button>
+                </div>
+                <div class="text-center">
+                    <small class="text-muted">
+                        <a asp-action="Profile">Back to Profile</a>
+                    </small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

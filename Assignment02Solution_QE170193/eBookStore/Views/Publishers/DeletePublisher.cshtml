@@ -1,0 +1,37 @@
+﻿@model BusinessObject.Models.Publisher
+@{
+    ViewData["Title"] = "Delete Publisher";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-danger fw-bold mb-4">Delete Publisher</h2>
+            <p class="text-muted text-center mb-4">Are you sure you want to delete this publisher?</p>
+
+            <dl class="row">
+                <dt class="col-4 fw-bold">Publisher Name</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.publisher_name)</dd>
+                <dt class="col-4 fw-bold">City</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.city)</dd>
+                <dt class="col-4 fw-bold">State</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.state)</dd>
+                <dt class="col-4 fw-bold">Country</dt>
+                <dd class="col-8">@Html.DisplayFor(model => model.country)</dd>
+            </dl>
+
+            <form asp-action="DeletePublisher">
+                <input type="hidden" asp-for="pub_id" />
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </form>
+            <hr />
+            <div class="text-center">
+                <small class="text-muted">
+                    <a asp-action="ViewPublisher">Back to List</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
