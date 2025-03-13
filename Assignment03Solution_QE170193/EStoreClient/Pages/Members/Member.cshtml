@@ -1,0 +1,84 @@
+﻿@page
+@model EStoreClient.Pages.Members.MemberModel
+@{
+    ViewData["Title"] = "Member Management";
+    var currentUserId = HttpContext.Session.GetString("MemberId");
+    var currentUserRole = HttpContext.Session.GetString("Role");
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Members</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-primary">Manage Members</h1>
+        <a asp-page="AddMember" class="btn btn-primary">Add New Member</a>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <form method="get" class="input-group">
+                <input asp-for="Keyword" type="text" class="form-control" placeholder="Search Here">
+                <button type="submit" class="btn btn-secondary"><i class="bi bi-search"></i> Filter</button>
+            </form>
+        </div>
+    </div>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Email</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Role</th>
+                    <th>Phone Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ListMember)
+                {
+                    <tr>
+                        <td>@item.Email</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>@item.Role</td>
+                        <td>@item.PhoneNumber</td>
+                        <td>
+                            <div class="btn-group">
+                                <a asp-page="UpdateMember" asp-route-id="@item.Id" class="btn btn-sm btn-primary"><i class="bi bi-pencil-square"></i> Edit</a>
+                                @if (currentUserId != item.Id.ToString())
+                                {
+                                    <a asp-page="DeleteMember" asp-route-id="@item.Id" class="btn btn-sm btn-danger" onclick="return confirmDelete(event, '@item.Id', '@item.Email')">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </a>
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

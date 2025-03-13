@@ -1,0 +1,45 @@
+﻿@page
+@model EStoreClient.Pages.LoginModel
+@{
+    Layout = "_LoginPartial";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Welcome Back!</h2>
+            <p class="text-muted text-center mb-4">Sign in to continue</p>
+
+            @if (ViewData["Title"] != null)
+            {
+                <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @ViewData["Title"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <form method="post">
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label fw-bold">Email</label>
+                    <input asp-for="Email" type="text" class="form-control" placeholder="Enter your email" required />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label fw-bold">Password</label>
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password" required />
+                </div>
+
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </div>
+
+                <div class="text-center">
+                    <small class="text-muted">
+                        Don't have an account? <a href="Register" class="text-primary fw-bold">Sign Up</a>
+                    </small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

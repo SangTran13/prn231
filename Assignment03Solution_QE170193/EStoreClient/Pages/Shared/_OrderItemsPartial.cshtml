@@ -1,0 +1,48 @@
+﻿@using DataAccess.Dto.OrderDto
+@model OrderRequestDto
+
+@if (Model.OrderItems.Count == 0)
+{
+    <p class="text-muted">No items added yet.</p>
+}
+else
+{
+    decimal total = 0;
+    int stt = 1;
+
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderItems)
+            {
+                var totalMoney = item.Quantity * item.UnitPrice;
+                total += totalMoney;
+
+                <tr>
+                    <td>@(stt++)</td>
+                    <td>@item.ProductName</td>
+                    <td>$@(item.UnitPrice.ToString("n0"))</td>
+                    <td>@item.Quantity</td>
+                    <td>$@(totalMoney.ToString("n0"))</td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm remove-item" data-product-id="@item.ProductId">Remove</button>
+                    </td>
+                </tr>
+            }
+            <tr class="fw-bold">
+                <td colspan="4" class="text-end">Total</td>
+                <td>$@(total.ToString("n0"))</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+}

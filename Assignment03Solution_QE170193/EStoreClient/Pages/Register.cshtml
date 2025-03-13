@@ -1,0 +1,73 @@
+﻿@page
+@model EStoreClient.Pages.RegisterModel
+@{
+    Layout = "_LoginPartial";
+}
+
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 15px;">
+        <div class="card-body">
+            <h2 class="text-center text-primary fw-bold mb-4">Join Us!</h2>
+            <p class="text-muted text-center mb-4">Create your account to get started</p>
+
+            <!-- Error Message -->
+            @if (ViewData["Title"] != null)
+            {
+                <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show mb-3" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    @ViewData["Title"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <form method="post">
+                <!-- Email Field -->
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label fw-bold">Email</label>
+                    <input asp-for="Email" type="email" class="form-control" placeholder="Enter your email" required />
+                    <span asp-validation-for="Email" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <!-- First Name Field -->
+                <div class="mb-3">
+                    <label asp-for="FirstName" class="form-label fw-bold">First Name</label>
+                    <input asp-for="FirstName" class="form-control" placeholder="Enter your first name" required />
+                    <span asp-validation-for="FirstName" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <!-- Last Name Field -->
+                <div class="mb-3">
+                    <label asp-for="LastName" class="form-label fw-bold">Last Name</label>
+                    <input asp-for="LastName" class="form-control" placeholder="Enter your last name" required />
+                    <span asp-validation-for="LastName" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <!-- Phone Number Field -->
+                <div class="mb-3">
+                    <label asp-for="PhoneNumber" class="form-label fw-bold">Phone Number</label>
+                    <input asp-for="PhoneNumber" class="form-control" placeholder="Enter your phone number" required />
+                    <span asp-validation-for="PhoneNumber" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <!-- Password Field -->
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label fw-bold">Password</label>
+                    <input asp-for="Password" type="password" class="form-control" placeholder="Create a strong password" required />
+                    <span asp-validation-for="Password" class="text-danger d-block small mt-1"></span>
+                </div>
+
+                <!-- Register Button -->
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary" onclick="this.form.submit(); this.disabled = true;">Sign Up</button>
+                </div>
+
+                <!-- Login Link -->
+                <div class="text-center">
+                    <small class="text-muted">
+                        Already have an account? <a href="Login" class="text-primary fw-bold">Sign In</a>
+                    </small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

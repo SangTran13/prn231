@@ -1,0 +1,112 @@
+﻿@page
+@model ReportOrderModel
+@{
+    ViewData["Title"] = "Report Order";
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Report Order</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-primary">Report Orders</h1>
+    </div>
+
+    @if (TempData.ContainsKey("ErrorMessage"))
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="input-group">
+                <input id="fromDate" type="date" class="form-control" placeholder="From Date">
+                <input id="toDate" type="date" class="form-control" placeholder="To Date">
+                <button type="button" id="btnCreateReport" class="btn btn-secondary"><i class="bi bi-search"></i> Generate</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Order ID</th>
+                    <th>Email</th>
+                    <th>Order Date</th>
+                    <th>Required Date</th>
+                    <th>Shipped Date</th>
+                    <th>Freight</th>
+                </tr>
+            </thead>
+            <tbody id="reportTableBody">
+                @if (Model.ListReportOrder != null && Model.ListReportOrder.Any())
+                {
+                    @foreach (var item in Model.ListReportOrder)
+                    {
+                        <tr>
+                            <td>@item.OrderId</td>
+                            <td>@item.Member.Email</td>
+                            <td>@item.OrderDate.ToShortDateString()</td>
+                            <td>@item.RequiredDate?.ToShortDateString()</td>
+                            <td>@item.ShippedDate?.ToShortDateString()</td>
+                            <td>@item.Freight.ToString("F2")$</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr><td colspan="6" class="text-center">No orders found.</td></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#btnCreateReport").click(function () {
+            var fromDate = $("#fromDate").val();
+            var toDate = $("#toDate").val();
+
+            if (!fromDate || !toDate) {
+                Swal.fire('Error', 'Please select both From Date and To Date.', 'error');
+                return;
+            }
+
+            if (new Date(fromDate) > new Date(toDate)) {
+                Swal.fire('Error', 'From Date must be less than or equal to To Date.', 'error');
+                return;
+            }
+
+            $.ajax({
+                url: "@Url.Page("ReportOrder", new { handler = "Search" })",
+                type: "GET",
+                data: { fromDate: fromDate, toDate: toDate },
+                success: function (data) {
+                    $("#reportTableBody").empty();
+                    if (data.length === 0) {
+                        $("#reportTableBody").append('<tr><td colspan="6" class="text-center">No orders found.</td></tr>');
+                    } else {
+                        data.forEach(function (item) {
+                            var formattedFreight = parseFloat(item.freight).toFixed(2);
+                            var row = `<tr>
+                                <td>${item.orderId}</td>
+                                <td>${item.member.email}</td>
+                               <td>${new Date(item.orderDate).toLocaleDateString()}</td>
+                                <td>${item.requiredDate ? new Date(item.requiredDate).toLocaleDateString() : ''}</td>
+                                <td>${item.shippedDate ? new Date(item.shippedDate).toLocaleDateString() : ''}</td>
+                                <td>${formattedFreight}$</td>
+                            </tr>`;
+                            $("#reportTableBody").append(row);
+                        });
+                    }
+                }
+            });
+        });
+    });
+</script>

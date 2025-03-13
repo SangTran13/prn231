@@ -1,0 +1,43 @@
+﻿@page
+@model EStoreClient.Pages.Members.AddMemberModel
+@{
+    ViewData["Title"] = "Add Member";
+}
+
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4" style="width: 400px;">
+        <div class="text-center mb-3">
+            <h3 class="text-primary">Add New Member</h3>
+        </div>
+
+        <form method="post">
+            <div class="mb-3">
+                <label asp-for="MemberAddRequest.Email" class="form-label">Email</label>
+                <input asp-for="MemberAddRequest.Email" class="form-control" type="email" placeholder="Enter email">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="MemberAddRequest.FirstName" class="form-label">First Name</label>
+                <input asp-for="MemberAddRequest.FirstName" class="form-control" type="text" placeholder="Enter first name">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="MemberAddRequest.LastName" class="form-label">Last Name</label>
+                <input asp-for="MemberAddRequest.LastName" class="form-control" type="text" placeholder="Enter last name">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="MemberAddRequest.PhoneNumber" class="form-label">Phone Number</label>
+                <input asp-for="MemberAddRequest.PhoneNumber" class="form-control" type="tel" placeholder="Enter phone number">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="MemberAddRequest.Password" class="form-label">Password</label>
+                <input asp-for="MemberAddRequest.Password" class="form-control" type="password" placeholder="Enter password">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Save</button>
+            <a asp-page="Member" class="btn btn-outline-danger w-100 mt-2">Cancel</a>
+        </form>
+    </div>
+</div>

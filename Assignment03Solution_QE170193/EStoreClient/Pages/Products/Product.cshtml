@@ -1,0 +1,176 @@
+﻿@page
+@using EStoreClient.Utility;
+@model EStoreClient.Pages.Products.ProductModel
+@{
+    ViewData["Title"] = "Product Management";
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        @if (RoleConstant.ADMIN.Equals(HttpContext.Session.GetString("Role")))
+        {
+            <h1 class="text-primary">Manage Products</h1>
+
+            <a asp-page="AddProduct" class="btn btn-primary">Add New Product</a>
+        }
+        else
+        {
+            <h1 class="text-primary">View Products</h1>
+        }
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="input-group">
+                <input id="searchKeyword" type="text" class="form-control" placeholder="Search name">
+                <input id="searchPrice" type="number" class="form-control" placeholder="Search price" step="0.01" min="0">
+                <button type="button" id="btnSearch" class="btn btn-secondary"><i class="bi bi-search"></i> Filter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Weight</th>
+                    <th>Unit Price</th>
+                    <th>Units In Stock</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+                @if (Model.ListProduct != null && Model.ListProduct.Any())
+                {
+                    @foreach (var item in Model.ListProduct)
+                    {
+                        <tr>
+                            <td>@item.ProductName</td>
+                            <td>@item.Category?.CategoryName</td>
+                            <td>@item.Weight</td>
+                            <td>@item.UnitPrice.ToString("F2")$</td>
+                            <td>@item.UnitsInStock</td>
+                            <td>
+                                <div class="btn-group">
+                                    @if (RoleConstant.ADMIN.Equals(HttpContext.Session.GetString("Role")))
+                                    {
+                                        <a asp-page="UpdateProduct" asp-route-id="@item.ProductId" class="btn btn-sm btn-primary"><i class="bi bi-pencil-square"></i> Edit</a>
+
+                                        <a asp-page="DeleteProduct" asp-route-id="@item.ProductId" class="btn btn-sm btn-danger" onclick="return confirmDelete(event)">
+                                            <i class="bi bi-trash"></i> Delete
+                                        </a>
+                                    }
+                                    else if (RoleConstant.USER.Equals(HttpContext.Session.GetString("Role")))
+                                    {
+                                        <a class="btn btn-sm btn-primary" href="/Orders/AddOrder"> <i class="bi bi-pencil-square"></i>Buy Product</a>
+                                    }
+                                    else
+                                    {
+                                        <a class="btn btn-sm btn-primary" href="/Login"> <i class="bi bi-pencil-square"></i>Buy Product</a>
+
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr><td colspan="6" class="text-center">No products found.</td></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function confirmDelete(event) {
+        event.preventDefault();
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = event.target.href;
+            }
+        });
+        return false;
+    }
+
+        $(document).ready(function () {
+        var role = '@(HttpContext.Session.GetString("Role"))'.trim();
+
+        $("#btnSearch").click(function () {
+            var keyword = $("#searchKeyword").val();
+            var price = $("#searchPrice").val();
+
+            $.ajax({
+                url: "@Url.Page("Product", new { handler = "Search" })",
+                type: "GET",
+                data: { keyword: keyword, price: price },
+                success: function (data) {
+                    $("#productTableBody").empty();
+
+                    if (!data || data.length === 0) {
+                        $("#productTableBody").append('<tr><td colspan="6" class="text-center">No products found.</td></tr>');
+                        return;
+                    }
+
+                    data.forEach(function (item) {
+                        var category = item.category ? item.category.categoryName : "N/A";
+                        var actionButtons = '';
+
+                        if (role === '@RoleConstant.ADMIN') {
+                            actionButtons = `<div class="btn-group">
+                                <a href="/UpdateProduct?id=${item.productId}" class="btn btn-sm btn-primary">
+                                    <i class="bi bi-pencil-square"></i> Edit
+                                </a>
+                                <a href="/DeleteProduct?id=${item.productId}" class="btn btn-sm btn-danger" onclick="return confirmDelete(event)">
+                                    <i class="bi bi-trash"></i> Delete
+                                </a>
+                            </div>`;
+                        } else if (role === '@RoleConstant.USER') {
+                            actionButtons = `<a href="/Orders/AddOrder" class="btn btn-sm btn-primary">
+                                <i class="bi bi-cart"></i> Buy Product
+                            </a>`;
+                        } else {
+                            actionButtons = `<a href="/Login" class="btn btn-sm btn-primary">
+                                <i class="bi bi-box-arrow-in-right"></i> Buy Product
+                            </a>`;
+                        }
+
+                        var row = `<tr>
+                            <td>${item.productName}</td>
+                            <td>${category}</td>
+                            <td>${item.weight.toFixed(2)</td>
+                            <td>${item.unitPrice.toFixed(2)}$</td>
+                            <td>${item.unitsInStock}</td>
+                            <td>${actionButtons}</td>
+                        </tr>`;
+
+                        $("#productTableBody").append(row);
+                    });
+                },
+                error: function () {
+                    alert("Failed to fetch products. Please try again.");
+                }
+            });
+        });
+    });
+</script>
+

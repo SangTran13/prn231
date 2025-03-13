@@ -1,0 +1,57 @@
+﻿@page
+@model EStoreClient.Pages.UserProfileModel
+@{
+}
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4" style="width: 450px; border-radius: 10px;">
+        <h5 class="text-center text-primary mb-3">User Profile</h5>
+
+        @if (TempData.ContainsKey("ErrorMessage"))
+        {
+            <div class="alert alert-danger text-center">@TempData["ErrorMessage"]</div>
+        }
+        @if (TempData.ContainsKey("SuccessMessage"))
+        {
+            <div class="alert alert-success text-center">@TempData["SuccessMessage"]</div>
+        }
+
+        <form method="post" asp-page-handler="UpdateProfile">
+            <div class="mb-3">
+                <label asp-for="Profile.Email" class="form-label">Email</label>
+                <input asp-for="Profile.Email" class="form-control" type="email" readonly required>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Profile.FirstName" class="form-label">First Name</label>
+                <input asp-for="Profile.FirstName" class="form-control" type="text" required>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Profile.LastName" class="form-label">Last Name</label>
+                <input asp-for="Profile.LastName" class="form-control" type="text" required>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Profile.PhoneNumber" class="form-label">Phone Number</label>
+                <input asp-for="Profile.PhoneNumber" class="form-control" type="text" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100 mb-3">Update Profile</button>
+        </form>
+
+        <hr>
+
+        <h6 class="text-secondary text-center">Change Password</h6>
+        <form method="post" asp-page-handler="ChangePassword">
+            <div class="mb-3">
+                <label asp-for="ChangePasswordRequest.OldPassword" class="form-label">Old Password</label>
+                <input asp-for="ChangePasswordRequest.OldPassword" class="form-control" type="password" placeholder="Enter old password" required>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ChangePasswordRequest.NewPassword" class="form-label">New Password</label>
+                <input asp-for="ChangePasswordRequest.NewPassword" class="form-control" type="password" placeholder="Enter new password" required>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ChangePasswordRequest.ConfirmPassword" class="form-label">Confirm Password</label>
+                <input asp-for="ChangePasswordRequest.ConfirmPassword" class="form-control" type="password" placeholder="Confirm new password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Update Password</button>
+        </form>
+    </div>
+</div>

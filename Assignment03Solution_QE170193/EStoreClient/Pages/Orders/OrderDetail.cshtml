@@ -1,0 +1,91 @@
+﻿@page
+@using EStoreClient.Utility
+@model EStoreClient.Pages.Orders.OrderDetailModel
+@{
+    ViewData["Title"] = "Order Detail";
+}
+
+<div class="container py-4">
+    <h1 class="mb-4 text-primary"><i class="bi bi-box-seam"></i> Order Details</h1>
+
+    <hr />
+    <div class="row g-4">
+        <!-- Left Column: Order Items -->
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title"><i class="bi bi-cart4"></i> Order Items</h4>
+                    <hr />
+                    @if (Model.ListOrderDetail == null || Model.ListOrderDetail.Count == 0)
+                    {
+                        <p class="text-muted">No items added yet.</p>
+                    }
+                    else
+                    {
+                        <table class="table table-striped table-hover text-center align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Unit Price</th>
+                                    <th>Quantity</th>
+                                    <th>Discount</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.ListOrderDetail)
+                                {
+                                    <tr>
+                                        <td>@item.Product.ProductName</td>
+                                        <td>@item.UnitPrice.ToString("C")</td>
+                                        <td>@item.Quantity</td>
+                                        <td>@item.Discount%</td>
+                                        <td>@(((item.UnitPrice * (1 - item.Discount / 100)) * item.Quantity))</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </div>
+            </div>
+        </div>
+        <!-- Right Column: Order Information -->
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title"><i class="bi bi-info-circle"></i> Order Information</h4>
+                    <hr />
+                    @if (Model.Order != null)
+                    {
+                        <p><strong>Order Id:</strong> @Model.Order.OrderId</p>
+                        <p><strong>Ordered Date:</strong> @Model.Order.OrderDate</p>
+                        <p><strong>Shipped Date:</strong> @Model.Order.ShippedDate</p>
+                        <p><strong>Freight:</strong> @Model.Order.Freight</p>
+                    }
+                    else
+                    {
+                        <p class="text-muted">Order information is not available.</p>
+                    }
+                </div>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title"><i class="bi bi-person-circle"></i> Member Information</h4>
+                    <hr />
+                    @if (Model.Member != null)
+                    {
+                        <p><strong>First Name:</strong> @Model.Member.FirstName</p>
+                        <p><strong>Last Name:</strong> @Model.Member.LastName</p>
+                        <p><strong>Email:</strong> @Model.Member.Email</p>
+                        <p><strong>Phone:</strong> @Model.Member.PhoneNumber</p>
+                    }
+                    else
+                    {
+                        <p class="text-muted">Member information is not available.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

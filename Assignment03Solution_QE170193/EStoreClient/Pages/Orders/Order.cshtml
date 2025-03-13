@@ -1,0 +1,89 @@
+﻿@page
+@using EStoreClient.Utility;
+@model EStoreClient.Pages.Orders.OrderModel
+@{
+    ViewData["Title"] = "Order Management";
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Orders</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-primary">Manage Orders</h1>
+        <a asp-page="AddOrder" class="btn btn-primary">Add New Order</a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Order Id</th>
+                    <th>Email</th>
+                    <th>Order Date</th>
+                    <th>Required Date</th>
+                    <th>Shipped Date</th>
+                    <th>Freight</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.ListOrder != null && Model.ListOrder.Any())
+                {
+                    @foreach (var item in Model.ListOrder)
+                    {
+                        <tr>
+                            <td>@item.OrderId</td>
+                            <td>@item.Member?.Email</td>
+                            <td>@item.OrderDate</td>
+                            <td>@item.RequiredDate</td>
+                            <td>@item.ShippedDate</td>
+                            <td>@item.Freight</td>
+                            <td>
+                                <div class="btn-group">
+                                    <a asp-page="OrderDetail" asp-route-id="@item.OrderId" class="btn btn-sm btn-primary"><i class="bi bi-eye"></i> View</a>
+                                    @if (RoleConstant.ADMIN.Equals(HttpContext.Session.GetString("Role")))
+                                    {
+                                        <a asp-page="DeleteOrder" asp-route-id="@item.OrderId" onclick="return confirmDelete(event)" class="btn btn-sm btn-danger">
+                                            <i class="bi bi-trash"></i> Delete
+                                        </a>
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="7" class="text-center">No orders found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function confirmDelete(event) {
+        event.preventDefault();
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "This action cannot be undone!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = event.target.href;
+            }
+        });
+        return false;
+    }
+</script>

@@ -1,0 +1,161 @@
+﻿@page
+@model EStoreClient.Pages.Orders.AddOrderModel
+
+<div class="container py-4">
+    <h1 class="mb-4 text-center">Create an Order</h1>
+
+    @if (ViewData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger" role="alert">@ViewData["ErrorMessage"]</div>
+    }
+    @if (ViewData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">@ViewData["SuccessMessage"]</div>
+    }
+
+    <div class="row">
+        <div class="col-md-8 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Add Product</h4>
+                    <form id="addProductForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Product</label>
+                                <select name="productId" class="form-select">
+                                    @foreach (var product in Model.Products)
+                                    {
+                                        <option value="@product.ProductId">@product.ProductName</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Quantity</label>
+                                <input name="quantity" type="number" class="form-control" min="1" value="1" />
+                            </div>
+                            <div class="col-md-2 d-flex align-items-end">
+                                <button type="button" id="addProductButton" class="btn btn-warning w-100">+</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mt-4">
+                <div class="card-body">
+                    <h4 class="card-title">List of Products</h4>
+                    <div id="orderItemsContainer">
+                        @if (Model.OrderRequest.OrderItems.Count == 0)
+                        {
+                            <p class="text-muted">No items added yet.</p>
+                        }
+                        else
+                        {
+                            decimal total = 0;
+                            int stt = 1;
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.OrderRequest.OrderItems)
+                                    {
+                                        var totalMoney = item.Quantity * item.UnitPrice;
+                                        total += totalMoney;
+
+                                        <tr>
+                                            <td>@(stt++)</td>
+                                            <td>@item.ProductName</td>
+                                            <td>$@(item.UnitPrice.ToString("n0"))</td>
+                                            <td>@item.Quantity</td>
+                                            <td>$@(totalMoney.ToString("n0"))</td>
+                                            <td>
+                                                <form method="post" class="removeItemForm">
+                                                    @Html.AntiForgeryToken()
+                                                    <input type="hidden" name="productId" value="@item.ProductId" />
+                                                    <button type="button" class="btn btn-danger btn-sm removeItemButton">Remove</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    }
+                                    <tr class="fw-bold">
+                                        <td colspan="4" class="text-end">Total</td>
+                                        <td>$@(total.ToString("n0"))</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Order Details</h4>
+                    <form method="post">
+                        <div class="form-group mb-3">
+                            <label class="form-label">Freight</label>
+                            <input asp-for="OrderRequest.Freight" class="form-control" />
+                        </div>
+                        <button type="submit" asp-page-handler="CreateOrder" class="btn btn-primary w-100">Create Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#addProductButton').click(function () {
+                var formData = $('#addProductForm').serialize();
+                $.ajax({
+                    url: '?handler=AddOrderItem',
+                    type: 'POST',
+                    data: formData,
+                    headers: {
+                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            $('#orderItemsContainer').load(' #orderItemsContainer > *');
+                        } else {
+                            alert(response.message);
+                        }
+                    }
+                });
+            });
+
+            $(document).on('click', '.removeItemButton', function () {
+                var form = $(this).closest('form');
+                var formData = form.serialize();
+                $.ajax({
+                    url: '?handler=RemoveOrderItem',
+                    type: 'POST',
+                    data: formData,
+                    headers: {
+                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            $('#orderItemsContainer').load(' #orderItemsContainer > *');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

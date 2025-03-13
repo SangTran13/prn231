@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "EStoreAPI\\EStoreAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "EStoreClient\\EStoreClient.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

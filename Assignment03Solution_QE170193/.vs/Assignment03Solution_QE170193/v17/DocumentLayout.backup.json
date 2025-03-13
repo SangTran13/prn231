@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5175931C-E4D1-4B3A-A937-A6FA3421CC9A}|EStoreClient\\EStoreClient.csproj|d:\\ky8\\prn231\\assignment03solution_qe170193\\estoreclient\\pages\\products\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5175931C-E4D1-4B3A-A937-A6FA3421CC9A}|EStoreClient\\EStoreClient.csproj|solutionrelative:estoreclient\\pages\\products\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16D9717-404D-4BDD-86E6-1584BE2825B3}|EStoreAPI\\EStoreAPI.csproj|d:\\ky8\\prn231\\assignment03solution_qe170193\\estoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16D9717-404D-4BDD-86E6-1584BE2825B3}|EStoreAPI\\EStoreAPI.csproj|solutionrelative:estoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:286:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.cshtml",
+              "DocumentMoniker": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\Pages\\Products\\Product.cshtml",
+              "RelativeDocumentMoniker": "EStoreClient\\Pages\\Products\\Product.cshtml",
+              "ToolTip": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\Pages\\Products\\Product.cshtml",
+              "RelativeToolTip": "EStoreClient\\Pages\\Products\\Product.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAHMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T09:20:05.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreAPI\\Program.cs",
+              "RelativeDocumentMoniker": "EStoreAPI\\Program.cs",
+              "ToolTip": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreAPI\\Program.cs",
+              "RelativeToolTip": "EStoreAPI\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T09:14:47.45Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

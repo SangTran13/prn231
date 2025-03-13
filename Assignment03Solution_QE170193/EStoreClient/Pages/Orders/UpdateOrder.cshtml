@@ -1,0 +1,105 @@
+﻿@page
+@model EStoreClient.Pages.Orders.UpdateOrderModel
+@{
+}
+<div class="mobile-menu-overlay"></div>
+
+<div class="main-container">
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        @*<div class="title">
+                        <h4>Form</h4>
+                        </div>*@
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="ClassRoom">Order List</a></li>
+                                @* @if (User.IsInRole(RoleConstant.ADMIN))
+                                {*@
+                                <li class="breadcrumb-item active" aria-current="page">Edit Class</li>
+                                @*}*@
+                                @*else
+                                {*@
+                                <li class="breadcrumb-item active" aria-current="page">Detail</li>
+                                @*}*@
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Default Basic Forms Start -->
+            @*@if (User.IsInRole(RoleConstant.ADMIN))
+            {*@
+            <div class="pd-20 card-box mb-30">
+                <form method="post">
+                    <div class="form-group row">
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="Order.OrderId" class="form-control" type="hidden">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="Order.OrderDate" class="col-sm-12 col-md-2 col-form-label">Order Date</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="Order.OrderDate" class="form-control" type="datetime" placeholder="Order Date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="Order.RequiredDate" class="col-sm-12 col-md-2 col-form-label">Require Date</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="Order.RequiredDate" class="form-control" type="datetime" placeholder="Require Date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="Order.ShippedDate" class="col-sm-12 col-md-2 col-form-label">Shipped Date</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="Order.ShippedDate" class="form-control" type="datetime" placeholder="Shipped Date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="Order.Freight" class="col-sm-12 col-md-2 col-form-label">Freight</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="Order.Freight" class="form-control" type="text" placeholder="Freight">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderDetail.UnitPrice" class="col-sm-12 col-md-2 col-form-label">UnitPrice</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderDetail.UnitPrice" class="form-control" type="text" placeholder="UnitPrice">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderDetail.Quantity" class="col-sm-12 col-md-2 col-form-label">Quantity</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderDetail.Quantity" class="form-control" type="text" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderDetail.Discount" class="col-sm-12 col-md-2 col-form-label">Discount</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderDetail.Discount" class="form-control" type="text" placeholder="Discount">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderDetail.ProductId" class="col-sm-12 col-md-2 col-form-label">Product</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderDetail.ProductId" class="form-control" type="text" placeholder="ProductId" readonly="readonly">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="Order.MemberId" class="col-sm-12 col-md-2 col-form-label">Member</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="Order.MemberId" class="form-control" type="text" placeholder="MemberId" readonly="readonly">
+                        </div>
+                    </div>
+
+                    <div class="btn-list">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <a asp-page="Order" type="submit" class="btn btn-danger">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

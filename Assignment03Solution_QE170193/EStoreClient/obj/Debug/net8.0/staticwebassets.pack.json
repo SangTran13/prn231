@@ -1,0 +1,1445 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EStoreClient.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EStoreClient.0bee8s40wf.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\css\\datepicker.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\css\\datepicker.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\css\\datepicker.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\css\\datepicker.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\datepicker.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\datepicker.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\datepicker.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\datepicker.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.cs.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.cs.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.da.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.da.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.de.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.de.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.en.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.en.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.es.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.es.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.fi.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.fi.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.fr.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.fr.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.hu.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.hu.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.nl.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.nl.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.pl.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.pl.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.pt-BR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.pt-BR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.pt.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.pt.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.ro.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.ro.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.sk.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.sk.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.zh.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\air-datepicker\\dist\\js\\i18n\\datepicker.zh.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\bootstrap-select.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\bootstrap-select.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\bootstrap-select.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\bootstrap-select.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\bootstrap-select.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\bootstrap-select.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\bootstrap-select.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\bootstrap-select.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\css\\bootstrap-select.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\css\\bootstrap-select.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\css\\bootstrap-select.css.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\css\\bootstrap-select.css.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\css\\bootstrap-select.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\css\\bootstrap-select.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\bootstrap-select.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\bootstrap-select.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\bootstrap-select.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\bootstrap-select.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\bootstrap-select.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\bootstrap-select.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\bootstrap-select.min.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\bootstrap-select.min.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-am_ET.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-am_ET.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-am_ET.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-am_ET.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-am_ET.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-am_ET.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ar_AR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ar_AR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ar_AR.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ar_AR.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ar_AR.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ar_AR.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-bg_BG.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-bg_BG.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-bg_BG.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-bg_BG.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-bg_BG.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-bg_BG.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-cs_CZ.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-cs_CZ.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-cs_CZ.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-cs_CZ.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-cs_CZ.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-cs_CZ.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-da_DK.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-da_DK.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-da_DK.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-da_DK.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-da_DK.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-da_DK.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-de_DE.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-de_DE.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-de_DE.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-de_DE.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-de_DE.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-de_DE.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-en_US.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-en_US.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-en_US.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-en_US.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-en_US.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-en_US.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_CL.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_CL.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_CL.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_CL.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_CL.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_CL.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_ES.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_ES.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_ES.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_ES.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_ES.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-es_ES.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-et_EE.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-et_EE.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-et_EE.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-et_EE.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-et_EE.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-et_EE.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-eu.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-eu.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-eu.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-eu.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-eu.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-eu.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fa_IR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fa_IR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fa_IR.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fa_IR.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fa_IR.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fa_IR.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fi_FI.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fi_FI.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fi_FI.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fi_FI.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fi_FI.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fi_FI.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fr_FR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fr_FR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fr_FR.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fr_FR.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fr_FR.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-fr_FR.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hr_HR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hr_HR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hr_HR.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hr_HR.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hr_HR.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hr_HR.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hu_HU.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hu_HU.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hu_HU.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hu_HU.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hu_HU.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-hu_HU.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-id_ID.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-id_ID.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-id_ID.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-id_ID.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-id_ID.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-id_ID.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-it_IT.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-it_IT.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-it_IT.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-it_IT.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-it_IT.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-it_IT.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ja_JP.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ja_JP.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ja_JP.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ja_JP.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ja_JP.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ja_JP.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-kh_KM.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-kh_KM.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-kh_KM.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-kh_KM.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-kh_KM.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-kh_KM.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ko_KR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ko_KR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ko_KR.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ko_KR.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ko_KR.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ko_KR.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lt_LT.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lt_LT.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lt_LT.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lt_LT.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lt_LT.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lt_LT.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lv_LV.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lv_LV.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lv_LV.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lv_LV.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lv_LV.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-lv_LV.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nb_NO.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nb_NO.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nb_NO.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nb_NO.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nb_NO.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nb_NO.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nl_NL.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nl_NL.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nl_NL.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nl_NL.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nl_NL.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-nl_NL.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pl_PL.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pl_PL.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pl_PL.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pl_PL.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pl_PL.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pl_PL.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_BR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_BR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_BR.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_BR.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_BR.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_BR.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_PT.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_PT.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_PT.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_PT.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_PT.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-pt_PT.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ro_RO.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ro_RO.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ro_RO.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ro_RO.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ro_RO.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ro_RO.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ru_RU.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ru_RU.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ru_RU.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ru_RU.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ru_RU.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ru_RU.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sk_SK.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sk_SK.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sk_SK.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sk_SK.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sk_SK.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sk_SK.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sl_SI.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sl_SI.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sl_SI.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sl_SI.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sl_SI.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sl_SI.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sv_SE.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sv_SE.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sv_SE.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sv_SE.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sv_SE.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-sv_SE.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-tr_TR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-tr_TR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-tr_TR.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-tr_TR.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-tr_TR.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-tr_TR.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ua_UA.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ua_UA.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ua_UA.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ua_UA.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ua_UA.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-ua_UA.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-vi_VN.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-vi_VN.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-vi_VN.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-vi_VN.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-vi_VN.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-vi_VN.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_CN.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_CN.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_CN.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_CN.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_CN.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_CN.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_TW.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_TW.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_TW.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_TW.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_TW.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\dist\\js\\i18n\\defaults-zh_TW.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\.jshintrc",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\.jshintrc"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\bootstrap-select.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\bootstrap-select.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ar_AR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ar_AR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-bg_BG.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-bg_BG.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-cro_CRO.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-cro_CRO.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-cs_CZ.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-cs_CZ.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-da_DK.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-da_DK.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-de_DE.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-de_DE.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-en_US.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-en_US.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-es_CL.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-es_CL.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-es_ES.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-es_ES.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-et_EE.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-et_EE.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-eu.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-eu.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-fa_IR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-fa_IR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-fi_FI.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-fi_FI.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-fr_FR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-fr_FR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-hu_HU.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-hu_HU.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-id_ID.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-id_ID.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-it_IT.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-it_IT.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ja_JP.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ja_JP.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-kh_KM.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-kh_KM.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ko_KR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ko_KR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-lt_LT.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-lt_LT.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-nb_NO.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-nb_NO.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-nl_NL.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-nl_NL.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-pl_PL.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-pl_PL.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-pt_BR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-pt_BR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-pt_PT.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-pt_PT.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ro_RO.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ro_RO.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ru_RU.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ru_RU.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-sk_SK.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-sk_SK.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-sl_SI.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-sl_SI.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-sv_SE.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-sv_SE.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-tr_TR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-tr_TR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ua_UA.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-ua_UA.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-vi_VN.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-vi_VN.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-zh_CN.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-zh_CN.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-zh_TW.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\js\\i18n\\defaults-zh_TW.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\bootstrap-select\\test.html",
+      "PackagePath": "staticwebassets\\src\\plugins\\bootstrap-select\\test.html"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\cropperjs\\dist\\cropper-init.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\cropperjs\\dist\\cropper-init.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\cropperjs\\dist\\cropper.common.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\cropperjs\\dist\\cropper.common.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\cropperjs\\dist\\cropper.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\cropperjs\\dist\\cropper.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\cropperjs\\dist\\cropper.esm.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\cropperjs\\dist\\cropper.esm.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\cropperjs\\dist\\cropper.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\cropperjs\\dist\\cropper.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\cropperjs\\dist\\cropper.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\cropperjs\\dist\\cropper.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\cropperjs\\dist\\cropper.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\cropperjs\\dist\\cropper.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\css\\responsive.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\css\\responsive.bootstrap4.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\css\\responsive.dataTables.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\css\\responsive.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\images\\sort_asc.png"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\images\\sort_asc_disabled.png",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\images\\sort_asc_disabled.png"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\images\\sort_both.png"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\images\\sort_desc.png"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\images\\sort_desc_disabled.png",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\images\\sort_desc_disabled.png"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\buttons.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\buttons.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\buttons.flash.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\buttons.flash.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\buttons.html5.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\buttons.html5.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\buttons.print.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\buttons.print.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\dataTables.buttons.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\dataTables.buttons.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\dataTables.responsive.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\dataTables.responsive.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\jszip.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\jszip.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\pdfmake.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\pdfmake.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\responsive.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\responsive.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\datatables\\js\\vfs_fonts.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\datatables\\js\\vfs_fonts.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\fancybox\\dist\\jquery.fancybox.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\fancybox\\dist\\jquery.fancybox.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\fancybox\\dist\\jquery.fancybox.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\fancybox\\dist\\jquery.fancybox.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\fancybox\\dist\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\fancybox\\dist\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\fancybox\\dist\\jquery.fancybox.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\fancybox\\dist\\jquery.fancybox.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-3d.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-3d.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-3d.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-3d.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-3d.src.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-3d.src.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-more.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-more.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-more.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-more.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-more.src.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\highcharts-6.0.7\\code\\highcharts-more.src.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highcharts-6.0.7\\code\\highcharts.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\highcharts-6.0.7\\code\\highcharts.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highcharts-6.0.7\\code\\highcharts.js.map",
+      "PackagePath": "staticwebassets\\src\\plugins\\highcharts-6.0.7\\code\\highcharts.js.map"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highcharts-6.0.7\\code\\highcharts.src.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\highcharts-6.0.7\\code\\highcharts.src.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highlight.js\\src\\highlight.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\highlight.js\\src\\highlight.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highlight.js\\src\\highlight.pack.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\highlight.js\\src\\highlight.pack.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\highlight.js\\src\\styles\\solarized-dark.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\highlight.js\\src\\styles\\solarized-dark.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\jquery-asColor\\dist\\jquery-asColor.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\jquery-asColor\\dist\\jquery-asColor.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\jquery-asGradient\\dist\\jquery-asGradient.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\jquery-asGradient\\dist\\jquery-asGradient.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\plyr\\dist\\plyr.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\plyr\\dist\\plyr.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\plyr\\dist\\plyr.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\plyr\\dist\\plyr.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\plyr\\dist\\plyr.svg",
+      "PackagePath": "staticwebassets\\src\\plugins\\plyr\\dist\\plyr.svg"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\css\\select2.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\css\\select2.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\css\\select2.min.css"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\af.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\af.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\ar.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\ar.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\az.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\az.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\bg.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\bg.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\bs.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\bs.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\ca.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\ca.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\cs.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\cs.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\da.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\da.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\de.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\de.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\dsb.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\dsb.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\el.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\el.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\en.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\en.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\es.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\es.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\et.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\et.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\eu.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\eu.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\fa.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\fa.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\fi.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\fi.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\fr.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\fr.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\gl.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\gl.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\he.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\he.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\hi.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\hi.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\hr.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\hr.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\hsb.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\hsb.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\hu.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\hu.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\hy.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\hy.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\id.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\id.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\is.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\is.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\it.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\it.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\ja.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\ja.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\km.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\km.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\ko.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\ko.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\lt.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\lt.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\lv.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\lv.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\mk.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\mk.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\ms.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\ms.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\nb.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\nb.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\nl.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\nl.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\pl.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\pl.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\ps.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\ps.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\pt-BR.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\pt-BR.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\pt.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\pt.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\ro.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\ro.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\ru.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\ru.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\sk.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\sk.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\sl.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\sl.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\sr-Cyrl.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\sr-Cyrl.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\sr.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\sr.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\sv.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\sv.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\th.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\th.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\tk.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\tk.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\tr.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\tr.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\uk.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\uk.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\vi.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\vi.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\zh-CN.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\zh-CN.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\i18n\\zh-TW.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\i18n\\zh-TW.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\select2.full.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\select2.full.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\select2.full.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\select2.full.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\select2.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\select2.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\select2\\dist\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\select2\\dist\\js\\select2.min.js"
+    },
+    {
+      "Id": "D:\\Ky8\\PRN231\\Assignment03Solution_QE170193\\EStoreClient\\wwwroot\\src\\plugins\\wysihtml5-master\\dist\\wysihtml5-0.3.0.js",
+      "PackagePath": "staticwebassets\\src\\plugins\\wysihtml5-master\\dist\\wysihtml5-0.3.0.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EStoreClient.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EStoreClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EStoreClient.props",
+      "PackagePath": "build\\EStoreClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EStoreClient.props",
+      "PackagePath": "buildMultiTargeting\\EStoreClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EStoreClient.props",
+      "PackagePath": "buildTransitive\\EStoreClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,40 @@
+﻿@page
+@model EStoreClient.Pages.Members.UpdateMemberModel
+@{
+    ViewData["Title"] = "Update Member";
+}
+
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4" style="width: 400px;">
+        <div class="text-center mb-3">
+            <h3 class="text-primary">Update Member</h3>
+        </div>
+
+        <form method="post">
+            <input asp-for="Member.Id" type="hidden">
+
+            <div class="mb-3">
+                <label asp-for="Member.Email" class="form-label">Email</label>
+                <input asp-for="Member.Email" class="form-control" type="email" placeholder="Enter email">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Member.FirstName" class="form-label">First Name</label>
+                <input asp-for="Member.FirstName" class="form-control" type="text" placeholder="Enter first name">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Member.LastName" class="form-label">Last Name</label>
+                <input asp-for="Member.LastName" class="form-control" type="text" placeholder="Enter last name">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Member.PhoneNumber" class="form-label">Phone Number</label>
+                <input asp-for="Member.PhoneNumber" class="form-control" type="tel" placeholder="Enter phone number">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Save</button>
+            <a asp-page="Member" class="btn btn-outline-danger w-100 mt-2">Cancel</a>
+        </form>
+    </div>
+</div>
